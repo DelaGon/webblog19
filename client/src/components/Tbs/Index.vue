@@ -1,8 +1,11 @@
 <template>
-  <div class="table-container">
-    <p><button v-on:click="logout">Logout</button></p>
+  <div class="custom-table">
+   <div class="bt-texth2h4">
+    <button class="logout-button" @click="logout">Logout</button>
+      
     <h2>Get All Tables</h2>
-    <h4>จำนวนโต๊ะ {{ tables.length }}</h4>
+    <h4> โต๊ะ {{ tables.length }}</h4>
+    </div>
     <div v-for="table in tables" v-bind:key="table.id" class="table-item">
       <p>Type: {{ table.type }}</p>
       <p>Brand: {{ table.brand }}</p>
@@ -62,12 +65,24 @@ export default {
 </style>
 <style scoped>
 
-.table-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+
+/* รูปแบบของตาราง */
+.custom-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* สีพื้นหลังของตาราง */
+    
+}
+.bt-texth2h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+ 
 }
 
 
@@ -75,14 +90,15 @@ export default {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 9px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
 }
 
+
 /* เพิ่มสไตล์สำหรับปุ่ม Logout */
 button {
-  background-color: #EFEFEF; 
+  background-color: #E27C1D; 
   color: #333; 
   border: none;
   padding: 10px 20px;
@@ -94,7 +110,7 @@ button {
 
 /* เพิ่่มสไตล์เมื่อนำเมาส์ไปชี้ปุ่ม */
 button:hover {
-  background-color: #DDDDDD; 
+  background-color: #E8D2A1; 
 }
 
 
@@ -108,11 +124,11 @@ h4 {
 
 /* เพิ่มสไตล์สำหรับปุ่มดูข้อมูล, แก้ไขข้อมูล และลบข้อมูล */
 button[v-on:click^="navigateTo"] {
-  background-color: #337DFF;
+  background-color: #E8D2A1;
 }
 
 button[v-on:click^="deleteTable"] {
-  background-color: #FF3333;
+  background-color: #E8D2A1;
 }
 
 /* เพิ่มสไตล์สำหรับปุ่มประเภทของโต๊ะ */

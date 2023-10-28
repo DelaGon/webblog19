@@ -10,9 +10,9 @@
     </form>
     <hr>
     <div>
-      <p>Type: {{ table.TYPE }}</p>
-      <p>Brand: {{ table.Brand }}</p>
-      <p>Color: {{ table.Color }}</p>
+      <p>Type: {{ table.type}}</p>
+      <p>Brand: {{ table.brand }}</p>
+      <p>Color: {{ table.color }}</p>
       <p>Material: {{ table.material }}</p>
       <p></p>
     </div>
@@ -73,7 +73,7 @@ export default {
     padding: 20px;
   }
 
-  /* สไตล์ของตัวอีกเลาท์ h1 */
+  /
   h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -81,12 +81,12 @@ export default {
     color: #333;
   }
 
-  /* สไตล์ของแบบฟอร์ม */
+  
   form {
     text-align: center;
   }
 
-  /* สไตล์ของ input field */
+ 
   .input-field {
     width: 100%;
     padding: 10px;
@@ -104,13 +104,16 @@ export default {
 
   /* สไตล์ของปุ่มสำหรับแบบฟอร์ม */
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: #E27C1D;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
   }
+  button:hover {
+  background-color: #E8D2A1; 
+}
 
   /* สไตล์ของข้อมูลที่แสดงออกมา */
   div p {

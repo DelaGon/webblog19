@@ -50,16 +50,17 @@ export default {
 }
 
 .form {
-  width: 400px;
+  width: 500px;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 
 .input-field {
-  width: 60%;
+  width: 90%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;

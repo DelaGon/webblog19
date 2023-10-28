@@ -65,15 +65,15 @@ h1 {
 
 p {
   font-size: 16px;
-  margin: 5px 0;
-  text-align: left;
+  margin: 9px 0;
+  text-align: center;
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #E27C1D;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 9px;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -81,6 +81,6 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #E8D2A1;
 }
 </style>
