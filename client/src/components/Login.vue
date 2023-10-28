@@ -6,6 +6,7 @@
             <p>Username: <input type="text" v-model="email" /></p>
             <p>Password: <input type="password" v-model="password" /></p>
             <p><button type="submit">Login</button></p>
+            
             <div class="error" v-if="error">{{ error }}</div>
         </form>
     </div>
@@ -36,7 +37,7 @@ export default {
                 this.$store.dispatch('setToken', response.data.token)
                 this.$store.dispatch('setUser', response.data.user)
                 this.$router.push({
-                    name: 'users'
+                    name: 'table'
                 })
             } catch (error) {
                 console.log(error)

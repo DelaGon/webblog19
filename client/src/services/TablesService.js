@@ -1,0 +1,19 @@
+import Api from '@/services/Api'
+
+export default {
+  index(search) {
+    return Api().get('tables');
+  },
+  show(tableId) {
+    return Api().get('table/' + tableId);
+  },
+  post(table) {
+    return Api().post('table/', table);
+  },
+  put(table) {
+    return Api().put('table/' + table.id, table);
+  },
+  delete(table) {
+    return Api().delete('table/' + table.id);
+  },
+}
